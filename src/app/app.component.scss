@@ -1,0 +1,151 @@
+/* ==================================================
+Variables
+================================================== */
+$colorhf:		#262626;
+$colorprimary:	#17A98C;
+$colorsecondary:#eae7e1;
+$colortemplate:	#222130;
+$colordark:		#34383b;
+$navhover: 		#2581dc;
+
+/* ==================================================
+Debug
+================================================== */
+.border1{
+	border: 3px solid #8a2be2;
+}
+.border2{
+	border: 3px solid #0000ff;
+}
+.border3{
+	border: 3px solid #02b168;
+}
+.border4{
+	border: 3px solid #ff9900;
+}
+.border5{
+	border: 3px solid #eb068b;
+}
+
+/* ==================================================
+Global
+================================================== */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+	background: $colordark;
+}
+
+html{
+	background: $colordark;
+}
+
+body{
+	font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	min-height: 100%;
+	height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+section{
+	padding: 50px 10%;
+	font-size: 1.3em;
+
+	h2{
+		font-size: 3rem;
+	}
+	
+	&:nth-child(odd){
+		// background: $colorsecondary;
+		background: linear-gradient(180deg, rgba(209,209,209,1) 0%, rgba(234,231,225,1) 100%);
+	}
+	&:nth-child(even){
+		// background: $colorprimary;
+		background: linear-gradient(180deg, rgba(21,128,107,1) 0%, rgba(20,139,116,1) 36%, rgba(23,169,140,1) 100%);
+	}
+}
+
+.navigation{
+	height: 70px;
+	background: $colorhf;
+
+	ul{
+		list-style: none;
+		display: flex;
+		justify-content: flex-end;
+		margin: 0;
+
+		li{
+
+			a{
+				text-decoration: none;
+				color: $colorsecondary;
+				font-size: 2rem;
+				line-height: 70px;
+				padding: 1rem 1.5rem;
+
+				&:hover{
+					background: $navhover;
+				}
+			}
+		}
+	}
+}
+
+.placeholder-header{
+	height: 70px;
+}
+
+.title{
+	height: 30rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	h1{
+		font-size: 3rem;
+	}
+
+	h4{
+		padding: 0 20%;
+		align-self: center;
+		font-weight: 200;
+		margin-bottom: 20px;
+	}
+}
+
+.thirds{
+	h5{
+		display: flex;
+
+		p{
+			padding: 20px 10px;
+			font-weight: 200;
+		}
+	}
+}
+
+.mybutton{
+	padding: 1.3rem 2rem;
+	border-radius: 20% 40%;
+	background: #027620;
+	color: white;
+
+	&:hover{
+		background: $navhover;
+	}
+}
